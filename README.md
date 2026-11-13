@@ -33,7 +33,9 @@ Sau khi cài, mọi thứ chạy offline — không cần internet.
 
 ### Chế độ A — AI điều khiển (tiện, kém an toàn hơn)
 
-Để một AI assistant (Claude Code, Copilot…) đọc HDSD và tự gõ lệnh script giúp bạn: chọn cấp redact, chạy, mở báo cáo. Tiện cho người không quen dòng lệnh — nhưng lưu ý AI nhìn thấy nội dung file **sau khi đã redact** và chạy trong phiên có ghi log. Chỉ dùng khi bạn đã chắc chắn bản redact sạch (đã rà cờ HITL).
+Để một trợ lý AI có khả năng chạy lệnh trên máy đọc `HDSD.docx` và tự gõ lệnh script giúp bạn: chọn cấp redact, chạy, mở báo cáo. Hoạt động với Claude Code, ChatGPT (bản desktop có quyền chạy terminal) hoặc Google Antigravity — cách dùng giống nhau: mở trợ lý trong thư mục của kit, đưa `HDSD.docx` cho trợ lý đọc và yêu cầu redact/unredact theo hướng dẫn.
+
+Tiện cho người không quen dòng lệnh — nhưng lưu ý AI nhìn thấy nội dung file **sau khi đã redact** và chạy trong phiên có ghi log. Chỉ dùng khi bạn đã chắc chắn bản redact sạch (đã rà cờ HITL).
 
 ### Chế độ B — Chạy trực tiếp script (an toàn tuyệt đối, khuyên dùng)
 
