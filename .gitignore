@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Kết quả chạy — tự sinh lại, không commit
+output/*
+!output/.gitkeep
+_test_out/
+
+# BẢO MẬT: bảng token→gốc, không bao giờ commit
+*_restore_map.json
+restore_map.json
