@@ -4,6 +4,10 @@
 
 **Bối cảnh:** che, xóa, làm sạch dữ liệu nhạy cảm trước khi đưa lên AI là nhiệm vụ tốn thời gian nếu làm thủ công. Bộ kit này tự động hoá việc đó, để anh chị tận dụng được AI an toàn hơn: che dữ liệu NHƯNG VIỆC CHE KHÔNG PHẢI DO AI ĐOÁN — mọi lần che đều bằng regex chạy trên chính máy bạn, script không có bất kỳ kết nối mạng nào.
 
+## 📖 Tìm hiểu thêm
+
+Bài nghiên cứu [Che dữ liệu trước khi đưa lên AI thì luật cho phép đến đâu](https://locdang.com/che-du-lieu-truoc-khi-ua-len-ai-thi-luat-cho-phep-en-au/) — tổng hợp 10 văn bản pháp luật Việt Nam và 6 chuẩn quốc tế, trả lời câu hỏi tài liệu nào được phép redact để dùng với AI, khi nào thì không.
+
 ## Cấu trúc
 
 ```
