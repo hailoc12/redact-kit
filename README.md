@@ -2,7 +2,7 @@
 
 > Che (redact) thông tin nhạy cảm khỏi tài liệu trước khi đưa vào AI — và khôi phục (unredact) khi AI xử lý xong. Chạy local 100%, deterministic bằng regex, không dùng AI để redact.
 
-**Bối cảnh:** quy định cấm cán bộ, công chức đưa dữ liệu mật, tài liệu nhạy cảm lên các công cụ AI. Bộ kit này giúp bạn tuân thủ đúng quy định mà vẫn tận dụng được AI: che dữ liệu NHƯNG VIỆC CHE KHÔNG PHẢI DO AI ĐOÁN — mọi lần che đều bằng regex chạy trên chính máy bạn, script không có bất kỳ kết nối mạng nào.
+**Bối cảnh:** che, xóa, làm sạch dữ liệu nhạy cảm trước khi đưa lên AI là nhiệm vụ tốn thời gian nếu làm thủ công. Bộ kit này tự động hoá việc đó, để anh chị tận dụng được AI an toàn hơn: che dữ liệu NHƯNG VIỆC CHE KHÔNG PHẢI DO AI ĐOÁN — mọi lần che đều bằng regex chạy trên chính máy bạn, script không có bất kỳ kết nối mạng nào.
 
 ## Cấu trúc
 
@@ -67,6 +67,22 @@ Tự tìm restore map → sinh `<tên>_restored.docx` + báo cáo unredact.
 | 2 — Cơ bản (mặc định) | + SĐT, email, mã hồ sơ KT, ngày sinh |
 | 3 — Nâng cao (khuyên dùng) | + tên người, đơn vị, số liệu tài chính |
 | 4 — Triệt để | + ngày tháng, ký hiệu VB, xoá metadata |
+
+## ⚠️ Phạm vi và trách nhiệm
+
+Luật hiện hành định nghĩa "dữ liệu" và các loại "bí mật". Các loại thông tin có tính chất mật/bí mật hiện gồm:
+
+- Thông tin, tài liệu, số liệu **bí mật nhà nước** (Tuyệt mật, Tối mật, Mật — Luật Bảo vệ bí mật nhà nước)
+- **Dữ liệu cốt lõi, dữ liệu quan trọng, dữ liệu dùng riêng** (Luật Dữ liệu)
+- **Dữ liệu cá nhân nhạy cảm** (Luật Bảo vệ dữ liệu cá nhân)
+- **Bí mật kinh doanh, bí mật công nghệ** (Luật Sở hữu trí tuệ, Bộ luật Lao động)
+- **Bí mật công tác, bí mật nghề nghiệp, bí mật đời tư** (Bộ luật Hình sự, Bộ luật Dân sự và luật chuyên ngành)
+
+Trong khung đó:
+
+- Tool chỉ **tự động hoá việc che một số thông tin thường được coi là nhạy cảm** — không bảo đảm tuyệt đối văn bản sau redact không còn sót dữ liệu thuộc các loại trên.
+- Văn bản đã redact có được dùng với công cụ AI hay không **tuỳ loại dữ liệu và quy định áp dụng** (ví dụ: bí mật kinh doanh/công nghệ phụ thuộc chính sách nội bộ của doanh nghiệp). Trách nhiệm cuối cùng thuộc về người sử dụng.
+- **TUYỆT ĐỐI KHÔNG** dùng tool lên văn bản thuộc diện bí mật nhà nước: tài liệu đóng dấu mật vốn **không được số hoá, sao chép**, chưa nói đến đưa vào bất kỳ công cụ nào.
 
 ## Quy tắc bảo mật
 
